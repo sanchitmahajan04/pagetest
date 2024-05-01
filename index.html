@@ -1,1 +1,22 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Random Redirect</title> </head> <body> Hello World <script> // Array of URLs to randomly choose from const urls = [ 'https://facebook.com/', 'https://google.com/', 'https://zscaler.com/' ]; // Function to redirect to a random URL function redirectToRandomURL() { // Get a random index from the urls array const randomIndex = Math.floor(Math.random() * urls.length); // Get the URL from the array using the random index const randomURL = urls[randomIndex]; // Redirect to the random URL window.location.href = randomURL; } // Call the redirectToRandomURL function every 30 seconds setInterval(redirectToRandomURL, 32000); </script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+         <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Random Redirect</title>
+         </head> 
+         <body> 
+            Hello World 
+            <script> 
+            // Array of URLs to randomly choose from 
+            const urls = [ 'https://facebook.com/', 'https://google.com/', 'https://zscaler.com/' ]; // Function to redirect to a random URL 
+            function redirectToRandomURL() { 
+                // Get a random index from the urls array 
+                const randomIndex = Math.floor(Math.random() * urls.length); // Get the URL from the array using the random index 
+                const randomURL = urls[randomIndex]; // Redirect to the random URL 
+                window.location.href = randomURL; } 
+                
+                // Call the redirectToRandomURL function every 30 seconds 
+                setInterval(redirectToRandomURL, 32000); 
+                </script> 
+                </body> 
+                </html>
